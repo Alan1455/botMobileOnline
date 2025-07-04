@@ -9,4 +9,5 @@ class ExampleCog(commands.Cog):
         await ctx.send("Pong!")
 
 def setup(bot):
-    bot.add_cog(ExampleCog(bot))
+    # bot.add_cog(ExampleCog(bot))
+    # ^ add this when using cogs method
