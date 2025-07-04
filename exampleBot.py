@@ -4,11 +4,11 @@ from discord.gateway import DiscordWebSocket
 
 from identify import identify
 
-TOKEN = "token"
-# remember put the right token
+TOKEN = "your_token_here"
+# ^ remember put the right token
 
 DiscordWebSocket.identify = identify
-# use the one which is mobile online
+# ^ Use the one which is mobile online
 
 
 intents = discord.Intents.default()
@@ -19,7 +19,8 @@ intents.members = True
 status = discord.Status.dnd
 prefix = commands.when_mentioned_or(".")
 activite = discord.Activity(type = discord.ActivityType.watching, name = "Example")
-guildID = 1234567890987654321
+guildID = 123456789012345678
+# ^ Replace with your actual Discord server ID
 
 
 class Example(commands.Bot):
